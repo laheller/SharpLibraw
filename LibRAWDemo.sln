@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibRAWDemo", "LibRAWDemo\LibRAWDemo.csproj", "{EC9EB4E9-46DE-4059-9F32-A3A2B742E9FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC9EB4E9-46DE-4059-9F32-A3A2B742E9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9EB4E9-46DE-4059-9F32-A3A2B742E9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9EB4E9-46DE-4059-9F32-A3A2B742E9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9EB4E9-46DE-4059-9F32-A3A2B742E9FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90B55BB0-00CE-46DF-8B2F-B12B5F543FBF}
+	EndGlobalSection
+EndGlobal
