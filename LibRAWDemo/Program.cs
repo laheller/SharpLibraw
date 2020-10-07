@@ -151,9 +151,10 @@ namespace LibRAWDemo {
             }
 
             // extract raw data into allocated memory buffer
-            var ptr = libraw_dcraw_make_mem_image(handler, ref r);
-            if (r != LibRaw_errors.LIBRAW_SUCCESS) {
-                Console.WriteLine("Mem_thumb: " + PtrToStringAnsi(libraw_strerror(r)));
+            var errc = 0;
+            var ptr = libraw_dcraw_make_mem_image(handler, ref errc);
+            if (errc != 0) {
+                Console.WriteLine("Mem_img: " + PtrToStringAnsi(strerror(errc)));
                 libraw_close(handler);
                 return;
             }

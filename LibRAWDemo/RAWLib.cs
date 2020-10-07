@@ -554,12 +554,16 @@ namespace LibRAWDemo {
 
         // Writing processing results to memory buffer
         [DllImport(LibraryName, CharSet = CharSet.Ansi)]
-        public static extern IntPtr libraw_dcraw_make_mem_image(IntPtr handler, ref LibRaw_errors errc);
+        public static extern IntPtr libraw_dcraw_make_mem_image(IntPtr handler, ref int errc);
 
         [DllImport(LibraryName, CharSet = CharSet.Ansi)]
-        public static extern IntPtr libraw_dcraw_make_mem_thumb(IntPtr handler, ref LibRaw_errors errc);
+        public static extern IntPtr libraw_dcraw_make_mem_thumb(IntPtr handler, ref int errc);
 
         [DllImport(LibraryName, CharSet = CharSet.Ansi)]
         public static extern void libraw_dcraw_clear_mem(IntPtr img);
+
+        // Microsoft Visual C runtime functions
+        [DllImport("msvcrt", CharSet = CharSet.Ansi)]
+        public static extern IntPtr strerror(int errc);
     }
 }
